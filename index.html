@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NES.CSS DOJO MIOJO</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  <style>
+      * {
+        transition: ease 1s;
+        margin-top: 10px;
+      }
+      main {
+        max-width: 980px;
+        margin: 0 auto;
+      }
+  </style>
+</head>
+<body>
+    <main>
+      <div class="nes-field">
+        <label for="tempo-miojo">Tempo de preparo do miojo</label>
+        <input type="text" id="tempo-miojo" class="nes-input" disabled value="3">
+      </div>
+      <div class="nes-field">
+        <label for="tempo-ampulheta1">Tempo da ampulheta 1</label>
+        <input type="text" id="tempo-ampulheta1" class="nes-input">
+      </div>
+      <div class="nes-field">
+        <label for="tempo-ampulheta2">Tempo da ampulheta 2</label>
+        <input type="text" id="tempo-ampulheta2" class="nes-input">
+      </div>
+      <button type="button" class="nes-btn is-primary" onclick="calcularTempo()">Calcular</button>
+      <p class="nes-balloon from-left nes-pointer" id="resultado" style="display: none;">
+        
+      </p>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
